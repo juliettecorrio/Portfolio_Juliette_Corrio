@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Juliette Corrio</title>
+  <meta name="description" content="Portfolio of Juliette Corrio, engineering student at SeaTech (University of Toulon): internship report, first-year project and skills assessment sheet in PDF (written in French).">
+  <style>
+    :root {
+      --bleu: #14325c;
+      --bleu-clair: #2a8bd4;
+      --gris: #5b6472;
+      --fond: #f5f7fa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      color: #1c2430;
+      background: var(--fond);
+      line-height: 1.65;
+    }
+    header {
+      background: var(--bleu);
+      color: white;
+      padding: 48px 20px 40px;
+    }
+    .conteneur { max-width: 860px; margin: 0 auto; }
+    header h1 { margin: 0 0 6px; font-size: 2.1em; }
+    header p { margin: 0; color: #cfe3f7; }
+    main { padding: 10px 20px 40px; }
+    section { margin-top: 36px; }
+    h2 {
+      color: var(--bleu);
+      border-bottom: 3px solid var(--bleu-clair);
+      padding-bottom: 6px;
+    }
+    .carte {
+      background: white;
+      border-radius: 10px;
+      padding: 22px 24px;
+      margin: 20px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .carte h3 { margin: 0 0 4px; color: var(--bleu); }
+    .meta { color: var(--gris); font-size: 0.92em; margin: 0 0 12px; }
+    .carte h4 { margin: 16px 0 4px; font-size: 1em; color: var(--bleu); }
+    .carte ul { margin: 6px 0 0; padding-left: 20px; }
+    .bouton {
+      display: inline-block;
+      background: var(--bleu-clair);
+      color: white;
+      padding: 9px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 14px 8px 0 0;
+      font-size: 0.95em;
+    }
+    .bouton:hover { background: var(--bleu); }
+    a.mail { color: var(--bleu-clair); }
+    a.mail:hover { color: var(--bleu); }
+    footer { text-align: center; color: var(--gris); font-size: 0.9em; padding: 24px 20px 40px; }
+    @media (max-width: 560px) {
+      header h1 { font-size: 1.7em; }
+      .carte { padding: 18px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="conteneur">
+      <h1>Juliette Corrio</h1>
+      <p>Second-year engineering student at SeaTech, University of Toulon &middot; Master 1</p>
+    </div>
+  </header>
+
+  <main class="conteneur">
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Second-year engineering student at SeaTech, I am interested in environmental topics, robotics,
+        programming and data processing. This portfolio brings together my two projects from the
+        2025-2026 academic year: an R&amp;D internship on artificial intelligence applied to waste management,
+        and a team experimental project on a floating wave attenuator. For each one, you will find the context,
+        my role and the tools used, along with the full report as a PDF. The PDF documents are written in French.
+      </p>
+    </section>
+
+    <section>
+      <h2>My projects</h2>
+
+      <article class="carte">
+        <h3>First-year internship: training an AI for waste recognition</h3>
+        <p class="meta">Paprec, R&amp;D team &middot; June 15 &ndash; July 10, 2026 (4 weeks) &middot; AI Waste Manager project</p>
+
+        <h4>Context</h4>
+        <p>
+          The AI Waste Manager project aims to predict the combustion and polluting emissions of waste
+          before it reaches the furnace of an incineration plant, using a camera and an artificial
+          intelligence capable of recognizing the type of waste.
+        </p>
+
+        <h4>My role</h4>
+        <ul>
+          <li>Manual segmentation and categorization of waste (plastic, cardboard, metal&hellip;) on
+              photographs of the hopper with Label Studio, to build the AI training dataset.</li>
+          <li>Development of a Python script (PyCharm) that frees up disk space by automatically deleting
+              some older images when storage space is low.</li>
+          <li>Transfer and organization of the plants' action lists from Excel to Microsoft Planner,
+              then Microsoft Lists, for the Operational Excellence team.</li>
+        </ul>
+
+        <a class="bouton" href="PDF/First-Year-Internship-Report.pdf.pdf" target="_blank" rel="noopener">Internship report (PDF, in French)</a>
+      </article>
+
+      <article class="carte">
+        <h3>First-year project: floating wave attenuator for the Port of Dunkirk</h3>
+        <p class="meta">Small-scale experimental study &middot; team project of 11 students, for Terres Océanes &middot; 2025-2026</p>
+
+        <h4>Context</h4>
+        <p>
+          The Port of Dunkirk is well protected from swell, but remains exposed to short waves (chop)
+          created by wind and maritime traffic. We evaluated floating wave attenuator models
+          at small scale in a wave flume, respecting Froude similarity,
+          at high tide and at low tide.
+        </p>
+
+        <h4>My role</h4>
+        <ul>
+          <li>Operation of the wave flume and data acquisition.</li>
+          <li>Probe calibration: calculation of the calibration coefficients in Matlab from the measurements,
+              then checking their consistency before sharing them with the team.</li>
+          <li>Data analysis (amplitudes, damping coefficients) and writing of the report in LaTeX.</li>
+        </ul>
+
+        <a class="bouton" href="PDF/First-Year-Project-Report.pdf.pdf" target="_blank" rel="noopener">Project report (PDF, in French)</a>
+        <a class="bouton" href="PDF/Year-1-Project-Competency-Assessment.pdf.pdf" target="_blank" rel="noopener">Competency assessment sheet (PDF, in French)</a>
+      </article>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><a class="mail" href="mailto:corriojuliette@gmail.com">corriojuliette@gmail.com</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    Portfolio of Juliette Corrio &middot; SeaTech, University of Toulon
+  </footer>
+
+</body>
+</html>
